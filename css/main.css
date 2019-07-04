@@ -5,11 +5,10 @@ body {
     background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.35) 50%), url(../images/anonymous-server-background.jpg);
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
 .page {
     margin: 0 30px;
-    height: 100vh;
-    width: 100vw;
 }
 
 @media all and (min-width:768px){
@@ -25,24 +24,43 @@ body {
     padding-top: 20px;
 }
 .nav-trigger {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
     background-image: url(../images/ico-menu.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: rgba(7, 7, 7, 0.7);
+    border: none;
+    color:transparent;
     height: 46px;
     width: 46px;
-    padding-top: 30px;
 }
-
-
+.nav-trigger:hover {
+    border: none;
+}
 
 
 /* MENU */
 /* .nav {}
 .nav__items {}
 .nav__item {}
-.nav__link {}
-.nav-close {} */
+.nav__link {} */
+.nav-close {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    background-image: url(../images/ico-close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(7, 7, 7, 0.7);
+    border: none;
+    color:transparent;
+    height: 46px;
+    width: 46px;
+}
 
 
 
