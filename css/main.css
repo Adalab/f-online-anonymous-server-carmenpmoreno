@@ -12,14 +12,6 @@ body {
     border: 1px solid beige;
     height: 100vh;
 }
-/* AÑADIR CUANDO SE PULSA BOTÓN MENÚ */
-.hidden{
-    display: none;
-}
-.page__menu-opened {
-    background-color: rgba(36, 10, 10, 0.7);
-}
-
 @media all and (min-width:768px){
     .page {
         padding: 0 60px;
@@ -29,8 +21,7 @@ body {
 
 /* HEADER */
 .page__header {
-    border: 1px solid lightblue;
-    
+    /* border: 1px solid lightblue; */
 }
 .nav-trigger {
     -webkit-appearance: none;
@@ -52,31 +43,56 @@ body {
 .nav-trigger:hover {
     border: none;
 }
+/* AÑADIR ESTAS DOS CLASES --> CUANDO SE PULSA BOTÓN MENÚ */
+/* oculto el botón */
+.nav-trigger__hidden{
+    display: none;
+}
+/* doy color al fondo de "page" */
+/* .page__menu-opened {
+    background-color: rgba(36, 10, 10, 0.8);
+} */
 
 /* MENU */
-/* QUITAR AL CONTENEDOR MADRE CUANDO SE PULSA BOTÓN ABRIR Y AÑADIR AL CERRAR */
+/* cuando se pulsa el botón de menú, de muestra nav. Quito la clase original y pongo otra */
 .nav {
     display: none;
 }
-/* AÑADIR CUANDO SE PULSA EL BOTÓN ABRIR Y QUITAR AL CERRAR */
 .nav__opened {
     position: absolute;
+    left: 0;
+    margin-right: 30px;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
+    border: 1px solid brown;
+    background-color: rgba(36, 10, 10, 0.8);
+    animation-name: intro;
+    animation-duration: 2s;
 }
-/* .nav__items {}
-.nav__item {}
+@keyframes intro {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+        transform: translateX(0%);
+    }
+}
+
+/* .nav__items {
+} */
+/* .nav__item {}
 .nav__link {} */
 .nav-close {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 0;
-    margin-left: 80%;
-    /* position: relative;
-    right: -320px;
-    margin-top: 15px; */
-    transform: translateX(-100%);
+    position: absolute;
+    /* right: -90%;
+    transform: translateX(-100%); */
+    top: 15px;
+    right: 30px;;
     background-image: url(../images/ico-close.svg);
     background-position: center;
     background-repeat: no-repeat;
