@@ -24,7 +24,7 @@ body {
 
 /* HEADER */
 .page__header {
-    height: 66px;
+    height: 68px;
 }
 .nav-trigger {
     -webkit-appearance: none;
@@ -34,11 +34,6 @@ body {
     position: absolute;
     top: 22px;
     right: 30px;
-    /* position: relative;
-    top: 22px;
-    left: 100%;
-    transform: translateX(-100%); */
-
     background-image: url(../images/ico-menu.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -52,16 +47,10 @@ body {
 .nav-trigger:hover {
     border: none;
 }
-/* AÑADIR ESTAS DOS CLASES --> CUANDO SE PULSA BOTÓN MENÚ */
-/* oculto el botón */
+/* CUANDO SE PULSA BOTÓN MENÚ oculto el botón */
 .nav-trigger__hidden{
     display: none;
 }
-/* doy color al fondo de "page" */
-/* .page__menu-opened {
-    background-color: rgba(36, 10, 10, 0.8);
-} */
-
 /* MENU */
 /* cuando se pulsa el botón de menú, de muestra nav. Quito la clase original y pongo otra */
 .nav {
@@ -110,10 +99,6 @@ body {
     position: absolute;
     top: 22px;
     right: 30px;
-    /* position: relative;
-    top: 22px;
-    left: 20%;
-    transform: translateX(-100%); */
     background-image: url(../images/ico-close.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -131,8 +116,9 @@ body {
 /* .page__main {
     padding-top: 55px;
 } */
-/* .page__wrapper {
-} */
+.page__wrapper .page__main-title {
+    max-width: 200px;
+}
 .page__main-title {
     padding-top: 220px;
     font-size: 28px;
@@ -140,14 +126,19 @@ body {
     text-transform: uppercase;
     margin: 0;
 }
-
+@media all and (min-width:768px){
+    .page__main-title {
+        font-size: 48px;
+    }
+}
 
 
 /* 
 FOOTER */
 .page__footer {
     background-color: rgba(219, 214, 214, 0.2);
-    margin-top: 140px;
+    position: absolute;
+    bottom: 18px;
 }
 /* .page__wrapper {
 } */
