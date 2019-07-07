@@ -131,7 +131,10 @@ body {
 .page__main {
     padding-top: 55px;
 }
+/* .page__wrapper {
+} */
 .page__main-title {
+    padding-top: 175px;
     font-size: 28px;
     color: #ffffff;
     text-transform: uppercase;
@@ -144,11 +147,10 @@ body {
 FOOTER */
 .page__footer {
     background-color: rgba(219, 214, 214, 0.2);
-    margin-bottom: 18px;
+    margin-top: 140px;
 }
-.page__wrapper {
-    margin-top: 170px;
-}
+/* .page__wrapper {
+} */
 .page__footer-copy {
     margin: 0;
     padding: 9px;
