@@ -15,12 +15,6 @@ body {
     margin: 0 30px;
     height: 100vh;
 }
-@media all and (min-width:768px){
-    .page {
-        margin: 0 60px;
-        max-width: 990px;
-    }
-}
 
 /* HEADER */
 .page__header {
@@ -58,6 +52,7 @@ body {
 }
 .nav__opened {
     position: absolute;
+    z-index: 1;
     display: flex;
     justify-content: center;
     top:0;
@@ -121,15 +116,10 @@ body {
 }
 .page__main-title {
     padding-top: 220px;
-    font-size: 28px;
+    font-size: 1em;
     color: #ffffff;
     text-transform: uppercase;
     margin: 0;
-}
-@media all and (min-width:768px){
-    .page__main-title {
-        font-size: 48px;
-    }
 }
 
 
@@ -137,6 +127,8 @@ body {
 FOOTER */
 .page__footer {
     background-color: rgba(219, 214, 214, 0.2);
+    min-width: 80%;
+    max-width: 100%;
     position: absolute;
     bottom: 18px;
 }
@@ -145,8 +137,28 @@ FOOTER */
 .page__footer-copy {
     margin: 0;
     padding: 9px;
-    font-size: 16px;
+    font-size: 0.5em;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(219, 219, 217, 0.5);
     text-align: center;
+}
+
+@media all and (min-width:768px){
+    .page {
+        margin: 0 60px;
+        max-width: 990px;
+    }
+    .page__main-title {
+        font-size: 2em;
+        padding-top: 330px;
+    }
+    .page__footer {
+        left: 0;
+        right: 0;
+        margin: 0 60px;
+    }
+    .nav__items {
+        width: 80%;
+        font-size: 1.5em;
+    }
 }
