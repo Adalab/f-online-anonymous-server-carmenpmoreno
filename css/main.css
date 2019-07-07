@@ -9,7 +9,6 @@ body {
     background-repeat: no-repeat;
     font-family: 'Roboto Slab';
     font-size: 28px;
-    color: #D0D0CF;
 }
 
 .page {
@@ -25,7 +24,7 @@ body {
 
 /* HEADER */
 .page__header {
-    height: 44px;
+    height: 66px;
 }
 .nav-trigger {
     -webkit-appearance: none;
@@ -129,13 +128,14 @@ body {
 
 
 /* MAIN */
-/* .page__main {}
-.page__wrapper {} */
+.page__main {
+    padding-top: 55px;
+}
 .page__main-title {
     font-size: 28px;
+    color: #ffffff;
     text-transform: uppercase;
     margin: 0;
-    padding-top: 100px;
 }
 
 
