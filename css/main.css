@@ -40,6 +40,7 @@ body {
 }
 .nav-trigger:hover {
     border: none;
+    box-shadow: 5px 5px  #6e6e6b;
 }
 /* CUANDO SE PULSA BOTÓN MENÚ oculto el botón */
 .nav-trigger__hidden{
@@ -86,6 +87,10 @@ body {
 .nav__link {
     color: #D0D0CF;
     text-decoration: none;
+    transition: color ease 0.2s;
+}
+.nav__link:hover {
+    color:  #6e6e6b;
 }
 .nav-close {
     -webkit-appearance: none;
@@ -104,7 +109,10 @@ body {
     height: 46px;
     width: 46px;
 }
-
+.nav-close:hover {
+    border: none;
+    box-shadow: 5px 5px  #635b57;
+}
 
 
 
