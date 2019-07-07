@@ -133,7 +133,6 @@ FOOTER */
     left: 0;
     right: 0;
     bottom: 18px;
-    border: 1px solid red;
 }
 /* .page__wrapper {
 } */
@@ -157,7 +156,6 @@ FOOTER */
     }
     .page__footer {
         margin: 0 60px;
-        border: 1px solid blue;
     }
     .nav__items {
         width: 80%;
@@ -175,7 +173,6 @@ FOOTER */
     .page__footer {
         margin: 0 auto;
         max-width: 990px;
-        border: 1px solid pink;
     }
     .nav__items {
         width: 80%;
