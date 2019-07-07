@@ -128,13 +128,13 @@ body {
 
 
 /* MAIN */
-.page__main {
+/* .page__main {
     padding-top: 55px;
-}
+} */
 /* .page__wrapper {
 } */
 .page__main-title {
-    padding-top: 175px;
+    padding-top: 220px;
     font-size: 28px;
     color: #ffffff;
     text-transform: uppercase;
